@@ -17,7 +17,8 @@
 - 如有问题，可以直接在issue反馈，或者直接找作者反馈
 
 ## 相关API
-- [网络摄像头IP](http://192.168.8.1:8083/?action=snapshot)http://192.168.8.1:8083/?action=snapshot
+- [网络摄像头IP：](http://192.168.8.1:8083/?action=snapshot)
+- http://192.168.8.1:8083/?action=snapshot
 
 ## 提交日志
 #### 2019.03.20 20:46
