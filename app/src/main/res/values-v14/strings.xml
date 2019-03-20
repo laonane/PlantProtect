@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_config">配置</string>
+    <string name="btn_connect_wifi">连接</string>
+    <string name="temp_text">土壤温湿度</string>
+    <string name="btn_start_work">开始作业</string>
+    <string name="btn_action_forword">前进</string>
+    <string name="btn_action_left">向左</string>
+    <string name="btn_action_back">后退</string>
+    <string name="btn_action_right">向右</string>
+    <string name="btn_status_off">关闭</string>
+    <string name="btn_status_on">自动</string>
+    <string name="btn_steer_forword">舵机前</string>
+    <string name="btn_steer_left">舵机左</string>
+    <string name="btn_steer_back">舵机后</string>
+    <string name="btn_steer_right">舵机右</string>
+    <string name="btn_action_reset">复位</string>
+</resources>
