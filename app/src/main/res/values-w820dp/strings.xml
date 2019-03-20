@@ -15,4 +15,5 @@
     <string name="btn_steer_back">舵机后</string>
     <string name="btn_steer_right">舵机右</string>
     <string name="btn_action_reset">复位</string>
+    <string name="headStr">智能车远程控制系统</string>
 </resources>

@@ -38,6 +38,7 @@ public class PaintVedeo extends SurfaceView implements SurfaceHolder.Callback, R
     }
 
     // ========================================
+
     /**
      * 获得屏幕像素值
      */
@@ -79,7 +80,8 @@ public class PaintVedeo extends SurfaceView implements SurfaceHolder.Callback, R
 //		Paint p = new Paint(); // 创建画笔,流图像可以不需要
         String imageURL = "http://192.168.8.1:8083/?action=snapshot";//视频地址,注意访问流媒体的action.
         try {
-            videoURL = new URL(imageURL);;
+            videoURL = new URL(imageURL);
+            ;
         } catch (Exception e) {
         }
         //绘图质量配置
@@ -92,7 +94,7 @@ public class PaintVedeo extends SurfaceView implements SurfaceHolder.Callback, R
                     c = holder.lockCanvas();// 锁定画布，一般在锁定后就可以通过其返回的画布对象Canvas，在其上面画图等操作了。
                     // ===========================================================
                     //	连接后的请求,与流都只能用一次,需要重新连接并获得流
-                    conn = (HttpURLConnection)videoURL.openConnection();//此方法会new HttpURLConnection并调用connect()
+                    conn = (HttpURLConnection) videoURL.openConnection();//此方法会new HttpURLConnection并调用connect()
 //					conn.connect();//getInputStream会自动调用此方法.此方法一般用在new HttpURLConnection之后.(new的时候没有发送连接请求)
                     is = conn.getInputStream(); //获取流
                     bmp = BitmapFactory.decodeStream(is, null, o);
@@ -104,13 +106,13 @@ public class PaintVedeo extends SurfaceView implements SurfaceHolder.Callback, R
                 }
             } catch (Exception e) {
 //				System.out.println(e.getMessage());
-            }finally{
-                try{
-                    if (holder != null) {
+            } finally {
+                try {
+                    if (null != holder) {
                         holder.unlockCanvasAndPost(c);// 解锁画图并提交
                         conn.disconnect();
                     }
-                }catch(Exception e){
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
 

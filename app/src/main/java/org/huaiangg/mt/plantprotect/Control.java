@@ -89,7 +89,7 @@ public class Control extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.ctr);
+		setContentView(R.layout.control);
 		// =========================================
 		this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);// 横屏代码
 		mIp = Settings.mIP;
